@@ -1,0 +1,33 @@
+.member-container {
+  width: 294px;
+  height: 294px;
+  background-size: cover;
+  background-color: white;
+}
+
+.disabled {
+  opacity: 0.3;
+}
+
+.member-container:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.member-info {
+  display: table;
+  margin: 0px auto;
+  color: #c4132f;
+  font-weight: 700;
+  font-size: 24px;
+  padding-top: 50%;
+  text-transform: uppercase;
+}
+
+.member-msg {
+  display: table;
+  margin: 0px auto;
+  font-weight: 500;
+  font-size: 16px;
+  color: #181818;
+}

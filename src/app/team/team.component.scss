@@ -1,0 +1,97 @@
+.team-container {
+  width: 100%;
+  background-color: #181818;
+  padding-top: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  color: #ffffff;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 100%;
+}
+
+.left-side-header {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team-header-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 60px 30px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.button-container {
+  display: table;
+  margin: 35px auto;
+}
+
+.load-button {
+  justify-content: center;
+  align-items: center;
+  padding: 24px 64px;
+  background: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.header-item {
+  text-transform: uppercase;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.no-data-container {
+  display: table;
+  margin: 35px auto;
+}
+
+.loading-container {
+  display: table;
+  margin: 35px auto;
+}
+.headline {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.footer-content {
+  background-color: #C4132F;
+}
+
+.footer-item {
+  padding: 20px;
+}
+
+.logo {
+  font-size: 47.2727px;
+  line-height: 67px;
+  color: #ffffff;
+  display: table;
+  margin: 35px auto;
+}
+
+.bold-logo {
+  font-weight: 900;
+}

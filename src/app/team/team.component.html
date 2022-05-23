@@ -1,0 +1,65 @@
+<div class="team-container">
+  <div class="team-header-container">
+    <div>
+      <div class="headline">unser team</div>
+      <div class="subtitle">Subtitle goes here</div>
+    </div>
+    <div class="left-side-header">
+      <div></div>
+      <div *ngFor="let duty of dutyList">
+        <div></div>
+        <div
+          class="header-item"
+          [ngStyle]="{
+            color: duty.isSelected ? '#C4132F' : '#FFFFFF'
+          }"
+          (click)="getListByDuty(duty.duty)"
+        >
+          {{ duty.duty }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="isLoading" class="loading-container">Loading...</div>
+
+  <div *ngIf="!isNodata; else no_content" class="flex-container">
+    <div *ngFor="let member of crewList;let indexOfelement=index;">
+      <app-team-member [member]="member" [index]="indexOfelement"
+      (hoveredCardindex)="changeData($event)"></app-team-member>
+    </div>
+  </div>
+  <ng-template #no_content>
+    <div class="no-data-container">No data available.</div>
+  </ng-template>
+  <div *ngIf="!isNodata" class="button-container">
+    <button class="load-button" (click)="loadMore()">Load more</button>
+  </div>
+
+  <div class="footer">
+    <div class="row">
+      <div class="col-s-12 col-md-6">
+        <span class="logo">
+          <span class="bold-logo">SEGEL </span> 
+          <span>TEAM</span>
+        </span></div>
+      <div class="col-s-12 col-md-6 footer-content">
+        <div class="row">
+          <div class="col-6 footer-item">About us</div>
+          <div class="col-6 footer-item">Impressum</div>
+        </div>
+        <div class="row">
+          <div class="col-6 footer-item">Gallery</div>
+          <div class="col-6 footer-item">Datenschutz</div>
+        </div>
+        <div class="row">
+          <div class="col-6 footer-item">Crew</div>
+          <div class="col-6 footer-item">Rechtliches</div>
+        </div>
+        <div class="row">
+          <div class="col-6 footer-item">Contact</div>
+          <div class="col-6 footer-item">Copyright</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

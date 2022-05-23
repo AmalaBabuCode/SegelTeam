@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">
+    <span class="">
+      <span class="circle"></span>
+    </span>
+    <span class="logo">
+      <span class="bold-logo">SEGEL </span> <span>TEAM</span>
+    </span>
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    (click)="toggleNavbar()"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    class="collapse navbar-collapse"
+    id="navbarSupportedContent"
+    [ngClass]="{ show: isCollapsed }"
+  >
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item" *ngFor="let item of navBarItems">
+        <a
+          class="nav-link"
+          href="#"
+          [ngStyle]="{
+            opacity: item.isActive ? '1' : '0.5'
+          }"
+          (click)="changeItem(item.item)"
+          >{{ item.item }}</a
+        >
+      </li>
+
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Gallery</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Crew</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li> -->
+    </ul>
+  </div>
+</nav>

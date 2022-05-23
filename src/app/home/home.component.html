@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="bg-image">
+        <img [src]="homepageBg" alt="boat" />
+      </div>
+      <div class="headline-container">
+        <div class="headline">This is headline</div>
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus massa
+          est scelerisque penatibus.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <app-headline-cards [bgColor]="bgColor1"></app-headline-cards>
+    </div>
+    <div class="col-md-3">
+      <app-headline-cards
+        [bgColor]="bgColor2"
+        [textColor]="textColor1"
+      ></app-headline-cards>
+    </div>
+    <div class="col-md-6">
+      <app-headline-cards [bgColor]="bgColor3"></app-headline-cards>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <app-headline></app-headline>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <app-team></app-team>
+    </div>
+  </div>
+</div>

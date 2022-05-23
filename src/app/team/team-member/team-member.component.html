@@ -1,0 +1,14 @@
+<div *ngIf="member.isProfile; else onlyImage">
+  <div class="member-container">
+    <div class="member-info">{{ member.name }}</div>
+    <div class="member-msg">A smooth sea never made a skilled sailor</div>
+  </div>
+</div>
+
+<ng-template #onlyImage>
+  <div
+    class="member-container disabled"
+    [ngStyle]="{ 'background-image': 'url(' + member.image + ')' }"
+    (mouseover)="emitValue()"
+  ></div>
+</ng-template>

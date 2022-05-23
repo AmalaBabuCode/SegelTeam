@@ -1,0 +1,32 @@
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-color: #e5eaee;
+}
+
+img {
+  width: 100%;
+}
+
+.col-md-12,
+.col-md-3,
+.col-md-6 {
+  padding: 0px;
+}
+
+
+.headline-container{
+  position: absolute;
+  top: 314px;
+  left: 66px;
+  color: #ffffff;
+}
+
+.headline {
+  font-weight: 800;
+  font-size: 80px;
+  text-transform: uppercase  
+}
+

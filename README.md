@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 
+## Code Set up
+
+Clone the code
+
+Go to the demo-app folder and open 'Command Prompt'. /
+Give 'npm i' to install the node modules. /
+After intsalling the node modules start the client by giving the command 'npm start' or 'ng serve'.
+The application is now eady to explore.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

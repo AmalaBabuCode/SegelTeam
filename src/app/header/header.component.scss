@@ -1,0 +1,28 @@
+.circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.logo {
+  font: 25px Arial;
+}
+
+.bold-logo {
+  font-weight: bold;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+.active {
+  border-bottom: 3px solid red;
+}
+
+.nav-item {
+  color: #fff;
+  opacity: 0.6;
+  padding-left: 10px;
+}
